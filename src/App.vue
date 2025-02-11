@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <messenger-body/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MessengerBody from './components/MessengerBody.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MessengerBody
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="css">
+  body {
+    background:  #757F9A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: "Averia Libre", serif;
+  }
+  .btn {
+    font-family: "Averia Libre", serif;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
 </style>
